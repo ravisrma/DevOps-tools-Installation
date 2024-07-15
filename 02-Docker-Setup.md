@@ -1,10 +1,12 @@
-### Setup Linux VM (Ubuntu)
+# Docker Server Setup in Linux VM #
 
-* Login into AWS Cloud account
-* Create Linux VM and connect to it using MobaXterm
+## Step-1 : Create Linux VM ##
 
-### Install Docker In Ubuntu VM
+1) Create Ubuntu VM using AWS EC2 (t2.micro)
+2) Connect to VM using MobaXterm
 
+## Step-2 Install Docker In Ubuntu VM ##
+```
 sudo apt-get update  
 sudo apt-get install ca-certificates curl  
 sudo install -m 0755 -d /etc/apt/keyrings  
@@ -14,20 +16,25 @@ echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
   $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null  
-sudo apt-get update  
+sudo apt-get update 
+``` 
 
-### Install the Docker packages:
-
+## Step-3 Install the Docker packages ##
+```
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
 
-### Verify docker installation:
-
+## Step-4 Verify docker installation ##
+```
 docker --version
+```
 
-### To run Docker without root privileges:
-
+## Step-5 To run Docker without root privileges ##
+```
 sudo usermod -aG docker $USER
+```
 
-### Test the docker
-
+## Step-6 Test the docker ##
+```
 docker run hello-world
+```
