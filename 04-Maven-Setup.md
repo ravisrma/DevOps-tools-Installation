@@ -38,7 +38,7 @@ PATH="$M2_HOME/bin:$PATH"
 export PATH
 ```
 
-## Step-6 Verify the Maven installation ##
+## Step-7 Verify the Maven installation ##
 ```
 mvn -version
 ```
