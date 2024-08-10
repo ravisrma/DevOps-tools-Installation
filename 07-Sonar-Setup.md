@@ -183,7 +183,7 @@ sonar.jdbc.password=Sona#123
 sonar.jdbc.url=jdbc:postgresql://localhost:5432/sqube
 
 ```
-![Alt text](images/example.png)
+![logo](https://github.com/ravisrma/DevOps-tools-Installation/blob/main/Image3.png)
 ## Step-7(d):  Replace “sona” with your database username, “Sona#123” with your database password, and “sqube” with your database name##
 ## Step-7(e): Save and exit the sonar.properties file ##
 ## Step-7(f): To edit the SonarQube script file, use the following command ##
