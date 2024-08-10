@@ -195,7 +195,7 @@ sudo nano /opt/sonarqube/bin/linux-x86-64/sonar.sh
 ```
 RUN_AS_USER=sona
 ```
-![logo](https://github.com/ravisrma/ravisrma/blob/main/Image2.png)
+![logo](https://github.com/ravisrma/DevOps-tools-Installation/blob/main/Image2.png)
 ## Step-7(i): Replace “sona” with the name of the user you created earlier ##
 ## Step-7(j): Save and exit the sonar.sh file ##
 # Step-8: Streamlining SonarQube: Setting Up a systemd Service#
@@ -252,7 +252,8 @@ fs.file-max=65536
 ulimit -n 65536
 ulimit -u 4096
 ```
-![logo](https://github.com/ravisrma/ravisrma/blob/main/Image1.png)
+
+![logo](https://github.com/ravisrma/DevOps-tools-Installation/blob/main/Image1.png)
 
 ## Step-9(e): Save and exit the sysctl configuration file##
 
