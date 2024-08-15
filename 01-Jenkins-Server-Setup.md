@@ -10,15 +10,15 @@
 
 ```
 sudo apt update -y
-sudo apt install fontconfig openjdk-17-jre -y
-java -version
+sudo apt install openjdk-17-jdk
 ```
 
-## Step-3 Setting JAVA_HOME and Path Environment Variables ##
+## Step-3 Find the Correct Path to Java 17,Setting JAVA_HOME and Path Environment Variables ##
 ```
-ls /usr/lib/jvm/
-echo "export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64" >> ~/.bashrc
-echo "export PATH=\$JAVA_HOME/bin:\$PATH" >> ~/.bashrc
+sudo update-alternatives --config java
+sudo nano /etc/environment
+JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64"
+source /etc/environment
 echo $JAVA_HOME
 ```
 
